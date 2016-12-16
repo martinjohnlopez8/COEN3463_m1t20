@@ -6,6 +6,10 @@ header{
 
 }
 
+.hero-padding{ 
+	margin-bottom: 50px;
+ }
+
 .home-bigname{ 
 	font-size: 100px;
  }
@@ -37,4 +41,3 @@ header{
 	font-size: :;
    }
 
- 
