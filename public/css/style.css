@@ -6,16 +6,74 @@ header{
 
 }
 
+.main-navigation{ 
+	background-color: white;
+	padding: 20px 0 20px;
+	font-size: 20px;
+	position: fixed;
+	width: 100%;
+	padding: 15px;
+	z-index: 9999;
+	transition: all 0.3s ease-out;
+	color: white !important;
+ }
+
+.main-navigation.-transparent{ 
+	background-color: transparent;
+	border-bottom: none;
+ }
+
+ .nav-style{ 
+	padding: 20px 0 20px;
+	font-size: 20px;
+	width: 100%;
+	padding: 15px;
+	z-index: 9999;
+  }
+
+@media only screen and (max-width: 768px) {
+    .martin-respo {
+        padding: 0 125px 0 125px;
+    }
+}
+
+.hero .title { 
+	font-weight: bold;
+ }
+
+.hero-image { 
+	padding: 100px 0 100px;
+	background: url(../images/hero-image.jpg) no-repeat bottom center scroll;
+	width: 100%;
+	height: 100%;
+	display: table;
+	background-size: cover;
+  }
+
+ .hero .content p { 
+	text-align: left;
+  }
+
+ .hero-martin { 
+	padding: 100px 0 100px 0;
+  }
+
+ .hero-martin h2 { 
+	font-size: 40px;
+  }
+
 .hero-padding{ 
 	margin-bottom: 50px;
  }
 
 .home-bigname{ 
 	font-size: 100px;
+	color: #ffffff;
  }
 
  .home-subtitle{ 
 	font-size: 50px;
+	color: #ffffff;
   }
 
  .home-card{ 
@@ -26,17 +84,19 @@ header{
 	color:black !important;
  }
 
-
+.martin-footer { 
+	padding: 40px 20px 40px;
+ }
 
  .martin-section{ 
 	padding-bottom: 50px
   }
 
- .martin-description{ 
+.martin-description{ 
  	font-size: 23px;
-  }
+ }
 
-  .description: { 
+.description: { 
 	color:white;
 	font-size: :;
    }

@@ -7,18 +7,28 @@
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
 	</head>
 	<body>
-		<nav class="nav-center has-shadow">
+		<!--*************************************************-->
+		<!--*************************************************-->
+		<!--******************MAIN NAVIGATION****************-->
+		<!--*************************************************-->
+		<!--*************************************************-->
+		<nav class="nav-center has-shadow main-navigation -transparent">
 				<p class="nav-item is-tab is-active is-centered">
-					<a href="index.html" class="link is-info is-large">MNM</a>
+					<a href="cube.html" class="link is-info is-large">Mark Paulo Cube</a>
 				</p>
 				<p class="nav-item is-tab is-centered">
-					<a href="cube.html" class="link is-info">Mark Paulo Cube</a>
+					<a href="index.html" class="link is-info">MNM</a>
 				</p>
 				<p class="nav-item is-tab is-centered">
 					<a href="martin.html" class="link is-info">Martin John Lopez</a>
 				</p>
 		</nav>
-		<section class="hero is-dark">
+		<!--*************************************************-->
+		<!--*************************************************-->
+		<!--*********************BODY************************-->
+		<!--*************************************************-->
+		<!--*************************************************-->
+		<section class="hero hero-image">
 			<div class="hero-body has-text-centered">
 				<div class="container  hero-padding">
 					<h1 class="title home-bigname">Hello, this is MNM</h1>
@@ -34,19 +44,13 @@
 							</div>
 							<div class="card-content">
 								<div class="media">
-									<div class="media-left">
-										<figure class="image is-32x32">
-											<img src="./image/mark.jpg" alt="Cube">
-										</figure>
-									</div>
 									<div class="media-content">
 										<p class="title is-5 twitter-card">Mark Paulo Cube</p>
 										<p class="subtitle is-6 twitter-card">@markyangel13</p>
 									</div>
 								</div>
 								<div class="content">
-									Mark Paulo Cube is a student of Polytechnic University of the Philippines.
-									<br>
+									<p>Computer Engineering | Hardware Specialist | Web Developer | Musician</p>
 									<small>1:30 PM - 16 Nov 2016</small>
 								</div>
 							</div>
@@ -56,24 +60,18 @@
 						<div class="card home-card">
 							<div class="card-image">
 								<figure class="image is-4by3">
-									<a href="cube.html"><img src="./images/martin.jpg" alt=""></a>
+									<a href="martin.html"><img src="./images/martin.jpg" alt=""></a>
 								</figure>
 							</div>
 							<div class="card-content">
 								<div class="media">
-									<div class="media-left">
-										<figure class="image is-32x32">
-											<img src="./images/martin.jpg" alt="Martin">
-										</figure>
-									</div>
 									<div class="media-content">
 										<p class="title is-5 twitter-card">Martin John Lopez</p>
 										<p class="subtitle is-6 twitter-card">@martinjohnlopez</p>
 									</div>
 								</div>
 								<div class="content">
-									Martin John Lopez is a student of Polytechnic University of the Philippines.
-									<br>
+									<p>Computer Engineering | Full Stack Web Developer | Athlete | Musician</p>
 									<small>1:30 PM - 16 Nov 2016</small>
 								</div>
 							</div>
@@ -87,12 +85,42 @@
 		<footer class="footer is-dark martin-footer">
 			<div class="container">
 				<div class="content has-text-centered">
-					<p>COPYRIGHT 2016 COEN 3463 TEAM 20</p>
-					<a class="icon" href="https://github.com/martinjohnlopez8/COEN3463_m1t20">
-          				<img src="./images/github.png" alt="Github" class="logo">
-       				</a>
+					<p>© 2016 COEN 3463 TEAM 20</p>
+					<a href="https://github.com/martinjohnlopez8/COEN3463_m1t20"><i class="fa fa-4x fa-github"></i></a>
 				</div>
 			</div>
 		</footer>
+
+		<!--*************************************************-->
+		<!--*************************************************-->
+		<!--******************SCRIPTS************************-->
+		<!--*************************************************-->
+		<!--*************************************************-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+		
+
+		<!--*************************************************-->
+		<!--*************************************************-->
+		<!--*************CHANGE HEADER COLOR*****************-->
+		<!--*************************************************-->
+		<!--*************************************************-->
+		<script type="text/javascript">
+			$(window).scroll(function() {
+				var scroll = $(window).scrollTop();
+				if (scroll > 0) {
+					$('.main-navigation').removeClass('-transparent');
+				} else {
+					$('.main-navigation').addClass('-transparent');
+				}
+			});
+
+			$('.mobile-toggler').click(
+				function() {
+					if ($(window).scrollTop() === 0) {
+						$('.main-navigation').toggleClass('-transparent');
+					}
+				}
+				);
+			</script>
 	</body>
 </html>
